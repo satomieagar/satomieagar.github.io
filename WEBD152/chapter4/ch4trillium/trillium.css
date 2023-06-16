@@ -1,0 +1,29 @@
+body {
+    background-color: #fff;
+    color: #191970;
+}
+h1 {
+    background-color: #191970;
+    color: #e6e6fa;
+    margin-bottom: 0;
+
+}
+h2 {
+    color: #6a6aa7;
+}
+nav {
+    background-color: #e2e1ef;
+}
+footer {
+    color: #666;
+}
+.companyname {
+    /* color: #6a6aa7; */
+    color: #f0c;
+}
+.feature {
+    color: #f0c;
+}
+#new {
+    color: #f0c;
+}
