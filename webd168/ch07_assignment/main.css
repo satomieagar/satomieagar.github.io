@@ -111,7 +111,7 @@ nav {
 .card-content {
   padding: 1.4em;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .card {
     flex: 50%;
   }
