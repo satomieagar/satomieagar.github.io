@@ -113,10 +113,10 @@ nav {
 }
 @media screen and (max-width: 992px) {
   .card {
-    flex: 50%;
+    flex: 0 0 48%; /* Adjust the percentage as needed */
+    width: calc(48% - 1em); /* Adjust the margin as needed */
   }
 }
-
 @media screen and (max-width: 600px) {
   .cards,
   .navbar ul {
