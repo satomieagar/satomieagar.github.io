@@ -35,11 +35,21 @@
       }
       .container {
         padding: 10px;
+        display: grid;
+        grid-column-gap: 40px;
+        grid-template-areas:
+          "content"
+          "facts";
+      }
+      .main-content {
+        grid-area: content;
+        padding: 0 10px;
       }
       .main-content p {
         padding-bottom: 20px;
       }
       .facts {
+        grid-area: facts;
         background-color: #ededed;
         padding: 10px;
       }
@@ -57,6 +67,40 @@
         color: #fff9d6;
         text-align: center;
         padding: 10px;
+      }
+      @media (min-width: 550px) {
+        h1 {
+          font-size: 4em;
+        }
+      }
+      @media (min-width: 750px) {
+        html {
+          background-color: #ccc;
+        }
+        .container {
+          grid-template-columns: 2fr 1fr;
+          grid-template-areas: "content facts";
+        }
+        header {
+          background-color: #036da7;
+          background-image: url(images/whaleshark03.jpg);
+          background-repeat: no-repeat;
+          -webkit-background-size: contain;
+          background-size: contain;
+          background-position: right;
+        }
+        header h1 {
+          font-size: 3.5em;
+          color: #ff9;
+          text-shadow: 1px 1px 2px #fff, 2px 2px #666, 3px 3px 5px #999;
+          padding-left: 20px;
+          text-align: left;
+        }
+        .main-content img {
+          width: 50%;
+          float: left;
+          padding: 0 20px 20px 0;
+        }
       }
     </style>
   </head>
